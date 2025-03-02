@@ -18,7 +18,7 @@ function Plagiarism() {
 
         try {
             const response = await fetch(
-                "http://141.148.196.41:5000/v1/tools/plagcheck",
+                "https://chinmaydesai.site/api/v1/tools/plagcheck",
                 {
                     method: "POST",
                     headers: {

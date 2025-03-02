@@ -18,7 +18,7 @@ function Citations() {
         setResult('');
 
         try {
-            const response = await fetch('http://141.148.196.41:5000/v1/tools/citations', {
+            const response = await fetch('https://chinmaydesai.site/api/v1/tools/citations', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
