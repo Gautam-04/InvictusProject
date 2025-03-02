@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Footer positioning */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto; 
+}
+
+.footer {
+  flex-shrink: 0; 
+  width: 100%;
+  background-color: #111827;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  padding: 24px 5%;
+  font-size: 14px;
+}
+
+/* Newsletter Section */
+.newsletter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-text {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  font-size: 16px;
+}
+
+.newsletter-text svg {
+  margin-right: 10px;
+}
+
+.subscribe-button {
+  background-color: #D85151;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.help-section {
+  display: flex;
+  align-items: center;
+}
+
+.need-help {
+  color: #9CA3AF;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #374151;
+  margin: 20px 0;
+}
+
+/* Main Footer Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/* Company Info */
+.company-info {
+  width: 25%;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.company-description {
+  color: #9CA3AF;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #1F2937;
+  margin-right: 10px;
+  color: #9CA3AF;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background-color: #374151;
+  color: white;
+}
+
+/* Footer Sections */
+.footer-section {
+  width: 30%;
+}
+
+.footer-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Categories Grid */
+.categories-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories-column {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.category-link, .company-link {
+  color: #9CA3AF;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+  font-size: 13px;
+}
+
+.category-link:hover, .company-link:hover {
+  color: white;
+}
+
+/* Company Section */
+.company-section {
+  width: 20%;
+}
+
+.company-links {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9CA3AF;
+  font-size: 12px;
+}
+
+.copyright-link {
+  color: white;
+  text-decoration: none;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+}
+
+.payment-icon {
+  height: 20px;
+  margin-left: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .company-info, .footer-section {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .help-section {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 20px 16px;
+  }
+  
+  .newsletter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .newsletter-text {
+    margin-bottom: 12px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .payment-methods {
+    margin-top: 16px;
+  }
+  
+  .payment-icon:first-child {
+    margin-left: 0;
+  }
+}

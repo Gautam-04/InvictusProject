@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  --red: #D85151;
+  --green: #3D7A81;
+  --white: #FFFFFF;
+  --grey: #F5F7FA;
+  --black: #111827;
+  --placeholder: #9CA3AF
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}

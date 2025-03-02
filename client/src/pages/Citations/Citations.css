@@ -1,0 +1,81 @@
+.citationSection {
+    text-align: center;
+    padding: 2rem;
+}
+
+.citationDiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 2rem 3rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.citationInput {
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    textarea {
+        width: 100%;
+        height: 60%;
+        padding: 1rem;
+        scrollbar-width: none;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        resize: none;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    button {
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #e63946;
+        color: white;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #c62828;
+    }
+
+    button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+}
+
+
+
+.citationOutput {
+    width: 45%;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.loading {
+    font-weight: bold;
+    color: #e63946;
+}
+
+@media (max-width: 768px) {
+    .citationDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .citationInput,
+    .citationOutput {
+        width: 90%;
+    }
+}
