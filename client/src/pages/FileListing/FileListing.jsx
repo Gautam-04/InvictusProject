@@ -232,7 +232,7 @@ function FileListing() {
         setTags(generateCombinations(query));
         try {
             const response = await fetch(
-                "http://localhost:5000/v1/search/elastic",
+                "http://141.148.196.41:5000/v1/search/elastic",
                 {
                     method: "POST",
                     headers: {
